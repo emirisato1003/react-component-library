@@ -35,6 +35,15 @@ button {
   gap: 5px;
 }
 
+.pill-badges{
+  display: flex;
+  gap: 5px;
+}
+
+button.pill{
+  border-radius: 50px;
+}
+
 button.gray{
   background-color: #f3f4f6;
   color: #1f2937;

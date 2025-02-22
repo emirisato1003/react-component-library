@@ -14,11 +14,17 @@ function App() {
       <div className="square-badges">
         {
           badges.map(color =>
-            <Badges color={color}>Badges</Badges>)
+            <Badges key={color} color={color}>Badges</Badges>)
         }
       </div>
 
       <h3>Pill</h3>
+      <div className="pill-badges">
+      {
+          badges.map(color =>
+            <Badges key={color} color={color} className='pill'>Badges</Badges>)
+        }
+      </div>
     </main>
   );
 }
