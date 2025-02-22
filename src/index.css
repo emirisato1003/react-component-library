@@ -30,6 +30,11 @@ button {
   align-items: center;
 }
 
+button.gray{
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
 button:focus {
   outline: none;
 }
