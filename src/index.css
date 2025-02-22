@@ -16,6 +16,9 @@ h1, h2, h3{
   font-family: "Permanent Marker", serif;
   color: #E5E7EB;
 }
+section h2{
+  text-align: center;
+}
 button {
   background-color: #E5E7EB;
   color: #4B5563;
@@ -44,41 +47,41 @@ button.pill{
   border-radius: 50px;
 }
 
-button.gray{
+.gray{
   background-color: #f3f4f6;
   color: #1f2937;
 }
-button.red{
+.red{
   background-color: #fee2e2;
   color: #991b1b;
 }
 
-button.yellow{
+.yellow{
   background-color: #fef3c7;
   color: #92400e;
 }
 
-button.green{
+.green{
   background-color: #d1fae5;
   color: #065f46;
 }
 
-button.blue{
+.blue{
   background-color: #dbeafe;
   color: #1e40af;
 }
 
-button.indigo{
+.indigo{
   background-color: #e0e7ff;
   color: #3730a3;
 }
 
-button.purple{
+.purple{
   background-color: #ede9fe;
   color: #5b21b6;
 }
 
-button.pink{
+.pink{
   background-color: #fce7f3;
   color: #9d174d;
 }
