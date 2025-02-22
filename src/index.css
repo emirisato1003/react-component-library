@@ -12,7 +12,9 @@ body {
   margin-top: 40px;
   font-family: Inter;
 }
-
+h1{
+  color: white;
+}
 button {
   background-color: #E5E7EB;
   color: #4B5563;
