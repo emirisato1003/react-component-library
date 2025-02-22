@@ -30,11 +30,50 @@ button {
   align-items: center;
 }
 
+.square-badges{
+  display: flex;
+  gap: 5px;
+}
+
 button.gray{
   background-color: #f3f4f6;
   color: #1f2937;
 }
+button.red{
+  background-color: #fee2e2;
+  color: #991b1b;
+}
 
+button.yellow{
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+button.green{
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+button.blue{
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+button.indigo{
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+button.purple{
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+button.pink{
+  background-color: #fce7f3;
+  color: #9d174d;
+}
+/* 
 button:focus {
   outline: none;
 }
@@ -64,7 +103,7 @@ button.button-danger {
   color: #F87171;
   background-color: #FEF2F2;
   border-color: #F87171;
-}
+} */
 
 .menu {
   position: relative;
