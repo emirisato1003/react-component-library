@@ -34,6 +34,9 @@ function App() {
           <h3>multi line</h3>
           <Banner status='green'>
             <Banner.Title>Congratulation!</Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti?
+            </Banner.Text>
           </Banner>
         </div>
       </section>
