@@ -85,6 +85,18 @@ button.pill{
   background-color: #fce7f3;
   color: #9d174d;
 }
+
+.banner{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 16px;
+}
+
+.banner.icon{
+ 
+}
+
 /* 
 button:focus {
   outline: none;
@@ -184,3 +196,11 @@ hr {
 .box.filled{
   background-color: blue;
 }
+
+
+
+
+
+
+
+
