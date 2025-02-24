@@ -1,9 +1,9 @@
 import Banner from "./Banner";
+import BannerDropdown from "./BannerDropdown";
 import BannerTitle from "./BannerTitle";
-import BannerText from "./BannerText";
 
 
 Banner.Title = BannerTitle;
-Banner.Text = BannerText
+Banner.Dropdown = BannerDropdown;
 
 export default Banner;

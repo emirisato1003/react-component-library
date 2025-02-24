@@ -25,23 +25,4 @@ export const bannerData = [{
     'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti?',
     'icon': <IoIosCheckmarkCircle />
 },
-{
-    'title': 'Congratulation!',
-    'status': 'success',
-    'icon': <IoIosCheckmarkCircle />
-},
-{
-    'title': 'Congratulation!',
-    'status': 'warning',
-    'icon': <IoIosCheckmarkCircle />
-},
-{
-    'title': 'Congratulation!',
-    'status': 'error',
-    'icon': <IoIosCheckmarkCircle />
-},
-{
-    'title': 'Congratulation!',
-    'status': 'neutral',
-    'icon': <IoIosCheckmarkCircle />
-}];
+];

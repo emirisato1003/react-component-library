@@ -34,7 +34,7 @@ function App() {
       </section>
       <h2>Banners</h2>
       <section className="banners">
-        <div className="multi-line">
+        {/* <div className="multi-line">
           <h3>multi line</h3>
           {
             bannerData.map(data => data.text &&
@@ -52,7 +52,7 @@ function App() {
             <Banner.Title>{data.title}</Banner.Title>
           </Banner>
           )}
-        </div>
+        </div> */}
       </section>
     </main>
   );
