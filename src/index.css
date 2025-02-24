@@ -86,16 +86,24 @@ button.pill{
   color: #9d174d;
 }
 
-.banner{
+section.banners .banner{
   display: flex;
   align-items: center;
   height: 80px;
-  padding: 16px;
+  padding: 12px;
+  border-radius: 8px;
 }
 
-.banner.icon{
- 
+section.banners .banner-content{
+  display: flex;
+  gap: 8px;
 }
+
+section.banners .icon{
+  margin-top: 19px;
+  font-size: 1.25rem;
+}
+
 
 /* 
 button:focus {
@@ -110,6 +118,7 @@ button.button-sm {
 button.button-lg {
   padding: 13px 25px;
 }
+
 
 button.button-success {
   color: #047857;

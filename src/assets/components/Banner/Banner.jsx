@@ -6,8 +6,10 @@ export default function Banner({ children, status }) {
     console.log(className);
     return (
         <div className={className}>
-            <div className="icon"><IoIosCheckmarkCircle /></div>
-            <div>{children}</div>
+            <div className="banner-content">
+                <IoIosCheckmarkCircle className="icon" />
+                <div className="banner-text">{children}</div>
+            </div>
         </div>
     );
 }
