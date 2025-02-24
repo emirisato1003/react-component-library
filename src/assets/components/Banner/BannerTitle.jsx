@@ -5,6 +5,6 @@ import { BannerContext } from "./Banner";
 export default function BannerTitle({ children }) {
     const { toggleOpen } = useContext(BannerContext)
     return (
-        <Button>{children}</Button>
+        <Button onClick={toggleOpen}>{children}</Button>
     );
 }

@@ -34,18 +34,16 @@ function App() {
       </section>
       <h2>Banners</h2>
       <section className="banners">
-        {/* <div className="multi-line">
-          <h3>multi line</h3>
-          {
-            bannerData.map(data => data.text &&
-              <Banner status={data.status}>
-                <Banner.Title>{data.title}</Banner.Title>
-                <Banner.Text>{data.text}</Banner.Text>
-              </Banner>
-            )
-          }
-        </div>
-        <div className="single-line">
+        {/* <h3>multi line</h3> */}
+        {
+          bannerData.map(data => data.text &&
+            <Banner status={data.status}>
+              <Banner.Title>{data.icon}{data.title}</Banner.Title>
+              <Banner.Dropdown>{data.text}</Banner.Dropdown>
+            </Banner>
+          )
+        }
+        {/* <div className="single-line">
           <h3>single line</h3>
           {bannerData.map(data => !data.text &&
             <Banner status={data.status}>
