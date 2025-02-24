@@ -2,6 +2,10 @@ import React from 'react';
 import Star from './assets/Star';
 import Badges from './assets/Badges';
 import Banner from './assets/components/Banner/index';
+import { bannerData } from './assets/components/Banner/bannerData';
+
+// import { IoIosCheckmarkCircle } from "react-icons/io";
+
 // import Menu from './Menu/Menu';
 
 function App() {
@@ -28,16 +32,26 @@ function App() {
           }
         </div>
       </section>
+      <h2>Banners</h2>
       <section className="banners">
-        <h2>Banners</h2>
         <div className="multi-line">
           <h3>multi line</h3>
-          <Banner status='green'>
-            <Banner.Title>Congratulation!</Banner.Title>
-            <Banner.Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti?
-            </Banner.Text>
+          {
+            bannerData.map(data => data.text &&
+              <Banner status={data.status}>
+                <Banner.Title>{data.title}</Banner.Title>
+                <Banner.Text>{data.text}</Banner.Text>
+              </Banner>
+            )
+          }
+        </div>
+        <div className="single-line">
+          <h3>single line</h3>
+          {bannerData.map(data => !data.text &&
+            <Banner status={data.status}>
+            <Banner.Title>{data.title}</Banner.Title>
           </Banner>
+          )}
         </div>
       </section>
     </main>
