@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
 }
 h1, h2, h3{
   font-family: "Permanent Marker", serif;
@@ -19,6 +19,7 @@ h1, h2, h3{
 section h2{
   text-align: center;
 }
+
 button {
   background-color: #E5E7EB;
   color: #4B5563;
@@ -108,31 +109,27 @@ button.pill{
 
 
 section.banners .banner{
-  display: flex;
-  align-items: center;
-  height: 80px;
-  padding: 12px;
+  margin: 12px;
   border-radius: 8px;
-  margin: 35px;
 }
 
-section.banners .banner-content{
+/* section.banners .banner-content{
   display: flex;
   gap: 8px;
-}
+} */
 
 section.banners .icon{
   margin-top: 19px;
   font-size: 1.25rem;
 }
 
-section.banners .banner-text h5{
+/* section.banners .banner-text h5{
   margin-bottom: 0;
 }
 
 section.banners .banner-text p{
   margin-top: 8px;
-}
+} */
 
 /* 
 button:focus {

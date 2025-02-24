@@ -4,9 +4,6 @@ import Badges from './assets/Badges';
 import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 
-// import { IoIosCheckmarkCircle } from "react-icons/io";
-
-// import Menu from './Menu/Menu';
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -37,7 +34,7 @@ function App() {
         {/* <h3>multi line</h3> */}
         {
           bannerData.map(data => data.text &&
-            <Banner status={data.status}>
+            <Banner key={data.status} status={data.status}>
               <Banner.Title>{data.icon}{data.title}</Banner.Title>
               <Banner.Dropdown>{data.text}</Banner.Dropdown>
             </Banner>

@@ -3,8 +3,8 @@ import Button from "../Button/Button";
 import { BannerContext } from "./Banner";
 
 export default function BannerTitle({ children }) {
-    const { toggleOpen } = useContext(BannerContext)
+    const { toggleOpen, status } = useContext(BannerContext)
     return (
-        <Button onClick={toggleOpen}>{children}</Button>
+        <div onClick={toggleOpen}>{children}</div>
     );
 }

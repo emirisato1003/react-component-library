@@ -10,14 +10,8 @@ export default function Banner({ children, status, onOpen }) {
     })
     const className = clsx(['banner', status]);
     return (
-        // <div className={className}>
-        //     <div className="banner-content">
-        //         <IoIosCheckmarkCircle className="icon" />
-        //         <div className="banner-text">{children}</div>
-        //     </div>
-        // </div>
-        <BannerContext.Provider value={{open, toggleOpen}}>
-            <div className="banner">
+        <BannerContext.Provider value={{open, toggleOpen, status}}>
+            <div className={className}>
                 {children}
             </div>
         </BannerContext.Provider>
