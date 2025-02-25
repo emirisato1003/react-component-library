@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import classNames from "classnames";
 import { createContext } from "react";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import useToggle from "../../hooks/useToggle";
@@ -8,7 +8,7 @@ export default function Banner({ children, status, onOpen }) {
     const [open, toggleOpen] = useToggle({
         onToggle: onOpen
     })
-    const className = clsx(['banner', status]);
+    const className = classNames('banner', status);
     return (
         <BannerContext.Provider value={{open, toggleOpen, status}}>
             <div className={className}>

@@ -111,15 +111,22 @@ button.pill{
 section.banners .banner{
   margin: 12px;
   border-radius: 8px;
+  padding: 16px ;
+  cursor: pointer;
 }
 
-/* section.banners .banner-content{
+section.banners .banner-line{
   display: flex;
-  gap: 8px;
-} */
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+section.banners p{
+  margin: 8px 0 0 30px;
+}
 
 section.banners .icon{
-  margin-top: 19px;
   font-size: 1.25rem;
 }
 
