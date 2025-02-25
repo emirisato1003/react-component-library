@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 40px;
   font-family: "Inter", serif;
@@ -17,8 +18,10 @@ h1, h2, h3{
   color: #E5E7EB;
   text-align: center;
 }
-section h2{
-  text-align: center;
+
+section{
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -114,6 +117,7 @@ section.banners .banner{
   border-radius: 8px;
   padding: 16px ;
   cursor: pointer;
+  max-width: 800px;
 }
 
 section.banners .banner-line{
@@ -131,46 +135,47 @@ section.banners .icon{
   font-size: 1.25rem;
 }
 
-/* section.banners .banner-text h5{
-  margin-bottom: 0;
+section.cards{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  gap: 20px;
 }
 
-section.banners .banner-text p{
-  margin-top: 8px;
-} */
-
-/* 
-button:focus {
-  outline: none;
+section.cards .card-container{
+  background-color: #F9FAFB;
+  text-align: center;
+  padding: 32px 24px;
+  max-width: 385px;
+  border-radius: 8px;
+  /* position: relative; */
 }
 
-button.button-sm {
-  padding: 7px 11px;
-  font-size: 12px;
+section.cards .card-container .icon-container{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  background-color: #3F75FE;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin-bottom: 16px;
 }
 
-button.button-lg {
-  padding: 13px 25px;
+
+section.cards .card-container .icon-container .icon{
+   /* margin-top: 13px; */
+  font-size: 24px;
+  background-color: #4c6ef5;
+  width: 48px;
+  height: 48px; 
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-
-button.button-success {
-  color: #047857;
-  background-color: #ECFDF5;
-  border-color: #047857;
-}
-
-button.button-warning {
-  color: #FBBF24;
-  background-color: #FFFBEB;
-  border-color: #FBBF24;
-}
-
-button.button-danger {
-  color: #F87171;
-  background-color: #FEF2F2;
-  border-color: #F87171;
-} */
 
 .menu {
   position: relative;

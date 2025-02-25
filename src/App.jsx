@@ -4,6 +4,9 @@ import Badges from './assets/Badges';
 import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 
+//temporary import
+import { HiOutlineCloudUpload } from "react-icons/hi";
+
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -29,9 +32,9 @@ function App() {
           }
         </div>
       </section>
-      <h2>Banners</h2>
+
       <section className="banners">
-        {/* <h3>multi line</h3> */}
+        <h2>Banners</h2>
         {
           bannerData.map(data => data.text &&
             <Banner key={data.status} status={data.status}>
@@ -40,15 +43,21 @@ function App() {
             </Banner>
           )
         }
-        {/* <div className="single-line">
-          <h3>single line</h3>
-          {bannerData.map(data => !data.text &&
-            <Banner status={data.status}>
-            <Banner.Title>{data.title}</Banner.Title>
-          </Banner>
-          )}
-        </div> */}
       </section>
+
+      <h2>Cards</h2>
+      <section className="cards">
+
+        <div className="card-container">
+          <div className="icon-container">
+            <HiOutlineCloudUpload className='icon' />
+          </div>
+          <h5>Easy Deployment</h5>
+          <p>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+        </div>
+
+      </section>
+
     </main>
   );
 }
