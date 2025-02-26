@@ -3,9 +3,9 @@ import Star from './assets/Star';
 import Badges from './assets/Badges';
 import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
+import Card from './assets/components/Cards/index';
 
 //temporary import
-import { HiOutlineCloudUpload } from "react-icons/hi";
 
 
 function App() {
@@ -48,13 +48,10 @@ function App() {
       <h2>Cards</h2>
       <section className="cards">
 
-        <div className="card-container">
-          <div className="icon-container">
-            <HiOutlineCloudUpload className='icon' />
-          </div>
-          <h5>Easy Deployment</h5>
-          <p>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
-        </div>
+        <Card>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+        </Card>
 
       </section>
 
