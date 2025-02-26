@@ -28,7 +28,7 @@ function App() {
         <div className="pill-badges">
           {
             badges.map(color =>
-              <Badges key={color} color={color} className='pill'>Badges</Badges>)
+              <Badges key={color} color={color}>Badges</Badges>)
           }
         </div>
       </section>

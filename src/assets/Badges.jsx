@@ -3,12 +3,12 @@ import classNames from "classnames";
 // import Button from "../Button/Button";
 
 
-export default function Badges({ children, color, className }) {
-    const allClasses = classNames(color, className)
-    console.log(className);
+export default function Badges({ children, color}) {
+    const allClasses = classNames('badge', color)
+    // console.log(className);
     return (
         <>
-            <button className={allClasses}>{children}</button>
+            <span className={allClasses}>{children}</span>
         </>
     );
 }
