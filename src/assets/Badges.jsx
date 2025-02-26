@@ -5,6 +5,7 @@ import classNames from "classnames";
 
 export default function Badges({ children, color, className }) {
     const allClasses = classNames(color, className)
+    console.log(className);
     return (
         <>
             <button className={allClasses}>{children}</button>
