@@ -68,11 +68,11 @@ function App() {
 
       <section className="testimonials">
         <div className="testimonial-container">
-          <div className="testimonial-img">
-            <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-          </div>
+          <img src="https://ben-custom-components.netlify.app/images/testimonial.jpeg" alt="" />
           <div className="testimonial-content">
-            <FaQuoteLeft />
+            <div className="icon">
+              <FaQuoteLeft />
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
             <div className="content-footer">
               <p className='footer-name'>May Andersons</p>
@@ -86,7 +86,7 @@ function App() {
         </div> */}
       </section>
 
-    </main>
+    </main >
   );
 }
 
