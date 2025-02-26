@@ -6,7 +6,7 @@ import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 
 //temporary import
-
+import { DiCodeBadge } from "react-icons/di";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -53,6 +53,15 @@ function App() {
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>
 
+        <Card icon={<DiCodeBadge />}>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+        </Card>
+
+        <Card icon={<DiCodeBadge />} iconBgColor='green'>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+        </Card>
       </section>
 
     </main>
