@@ -346,4 +346,15 @@ section.testimonials{
 }
 
 
+@media (max-width: 1500px){
+  .testimonial-container{
+    min-width: 375px;
+    height: 655px;
+  }
 
+  .testimonial-container img{
+    width: 340px;
+    height: 200px;
+
+  }
+}
