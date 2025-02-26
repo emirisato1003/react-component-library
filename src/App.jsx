@@ -53,12 +53,12 @@ function App() {
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>
 
-        <Card icon={<DiCodeBadge />}>
+        <Card icon={<DiCodeBadge />} iconBgColor='gray'>
           <Card.Title>Easy Deployment</Card.Title>
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>
 
-        <Card icon={<DiCodeBadge />} iconBgColor='green'>
+        <Card icon={<DiCodeBadge />} iconBgColor='purple'>
           <Card.Title>Easy Deployment</Card.Title>
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>

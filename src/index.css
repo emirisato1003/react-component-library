@@ -195,7 +195,6 @@ section.cards .card-container .icon-container{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3F75FE;
   height: 50px;
   width: 50px;
   border-radius: 10px;
@@ -218,11 +217,7 @@ section.cards .card-container .card-text{
 
 
 section.cards .card-container .icon-container .icon{
-   /* margin-top: 13px; */
   font-size: 24px;
-  background-color: #4c6ef5;
-  /* width: 48px; */
-  /* height: 48px;  */
   border-radius: 8px;
   display: flex;
   align-items: center;
