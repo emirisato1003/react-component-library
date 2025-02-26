@@ -168,9 +168,7 @@ section.banners .icon{
 }
 
 section.cards{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  align-items: center;
   margin-top: 40px;
   gap: 20px;
 }
@@ -186,6 +184,7 @@ section.cards .card-container{
   max-width: 385px;
   border-radius: 8px;
   position: relative;
+  margin: 20px 0;
 }
 
 section.cards .card-container .icon-container{

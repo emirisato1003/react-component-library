@@ -7,6 +7,8 @@ import Card from './assets/components/Cards/index';
 
 //temporary import
 import { DiCodeBadge } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -53,7 +55,7 @@ function App() {
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>
 
-        <Card icon={<DiCodeBadge />} iconBgColor='gray'>
+        <Card icon={<FaReact />} iconBgColor='blue'>
           <Card.Title>Easy Deployment</Card.Title>
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
         </Card>
@@ -64,8 +66,32 @@ function App() {
         </Card>
       </section>
 
+      <section className="testimonials">
+        <div className="testimonial-container">
+          <div className="testimonial-img">
+            <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          </div>
+          <div className="testimonial-content">
+            <FaQuoteLeft />
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
+            <div className="content-footer">
+              <p className='footer-name'>May Andersons</p>
+              <p className='footer-role'>Workcation, CTO</p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="testimonial-container">
+
+        </div> */}
+      </section>
+
     </main>
   );
 }
 
 export default App;
+
+
+
+
