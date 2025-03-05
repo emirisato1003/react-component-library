@@ -25,21 +25,6 @@ main{
   margin-top: 3em;
 }
 
-/* button {
-  background-color: #E5E7EB;
-  color: #4B5563; 
-  border: 1px solid #6B7280; 
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  font-weight: 500;
-  padding: 9px 17px;
-  border-radius: 6px;
-  line-height: 24px;
-  display: flex; 
-  align-items: center; 
-  font-family: 'Inter', sans-serif;
-} */
-
 .badge{
   cursor: pointer;
   font-weight: 500;
@@ -51,6 +36,7 @@ main{
 
 .square-badges{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 10px 0;
   gap: 5px;
@@ -58,6 +44,7 @@ main{
 
 .pill-badges{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin:5px 0;
   gap: 5px;
@@ -142,9 +129,10 @@ main{
   color: #60a5fa;
 }
 
-.banner{
+section.banners{
+  display: flex;
+  flex-direction: column;
   width: 600px;
-  margin-top: 15px;
 }
 
 .banner:hover{
@@ -152,34 +140,26 @@ main{
 }
 
 .banner{
+  flex-grow: 1;
+  margin: 15px 10px;
   border-radius: 8px;
-  padding: 16px ;
+  padding: 16px;
   cursor: pointer;
-  max-width: 800px;
 }
 
 .banner-line{
   display: flex;
-  align-items: center;
   gap: 12px;
   font-weight: 500;
 }
 
 .banner p{
-  margin: 8px 0 0 30px;
+  padding: 8px 15px 0 34px;
 }
 
 .banner-line .icon{
   font-size: 1.25rem;
 }
-
-/* section.cards{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 40px;
-  gap: 20px;
-} */
 
 .card{
   margin-top: 30px;
@@ -230,65 +210,117 @@ main{
 }
 
 section.testimonials{
-  margin: 90px;
-  display: flex;
+  /* display: flex; */
+  /* margin: 90px; */
 }
 
 .testimonial-container{
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
-  height: 400px;
   background-color: #2545B8;
-  min-width: 1358px;
+  height: 400px;
+  flex-grow: 1;
+  margin: 7em 0;
 }
 
 .testimonial-container img{
-  height: 450px;
-  width: auto;
-  transform: translate(5rem, .2rem);
+  width: 355px;
+  object-fit: cover;
+  object-position: 0 36%;
+  transform: translate(3.5em,-0.01em);
   box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
 }
 
 .testimonial-body{
-  width: 800px;
-  margin: 40px;
-  /* position: absolute; */
-  left: 30%;
-  top: 45px;
+  color: white;
+  padding: 7em;
 }
+
 
 .testimonial-body .icon{
   font-size: 35px;
-  margin-bottom: 24px;
   color:rgba(255, 255, 255, 0.25);
 }
 
-.testimonial-body p{
+p.body-text{
   margin: 15px 0;
   font-size: 1.5rem;
   color: #ffffff;
+  padding: 25px 0;
 }
 
-.testimonial-body .content-footer{
-  margin-top: 24px;
+.footer-name{
+  font-weight: bold;
 }
 
-.testimonial-body .content-footer p{
-  font-size: 1rem;
-}
-
-
-@media (max-width: 1500px){
+@media (max-width: 1200px) {
   .testimonial-container{
-    min-width: 375px;
-    height: 655px;
+    margin: 0 0 40px 0;
+    height: 320px;
+  }
+  .testimonial-container img{
+    width: 250px;
+    height: auto;
+    transform: translate(2em,-0.01em);
+  }
+  
+  .testimonial-body{
+    margin: 35px;
+    padding: 0 20px 0;
   }
 
+  p.body-text{
+    font-size: 1.2rem;
+  }
+  
+}
+
+
+@media (max-width: 992px) {
+  p.body-text{
+    /* font-size: 1.1rem; */
+  }
+  
+  .card-footer p{
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px){
+  section.banners{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+  
+
+  .testimonial-container{
+    margin-top: 10em;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
   .testimonial-container img{
     width: 340px;
-    height: 200px;
+    height: 225px;
+    object-fit: cover;
+    object-position: 0 36%;
+    transform: translateY(-7em);
+  }
+  
+  .testimonial-body{
+    width: 380px;
+    color: white;
+    margin-top: -10%;
+    padding: 0 20px 25px;
+  }
 
+  p.body-text{
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 25px 0;
   }
 }
