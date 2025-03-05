@@ -73,8 +73,8 @@ function App() {
             <div className="icon">
               <FaQuoteLeft />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
-            <div className="content-footer">
+            <p className="body-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
+            <div className="card-footer">
               <p className='footer-name'>May Andersons</p>
               <p className='footer-role'>Workcation, CTO</p>
             </div>
