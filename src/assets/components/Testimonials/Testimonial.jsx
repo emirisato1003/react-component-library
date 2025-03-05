@@ -1,7 +1,7 @@
 export default function Testimonial({ children, imgUrl }) {
     return (
         <div className="testimonial-container">
-            {imgUrl && <img src={imgUrl} alt="" />}
+            {imgUrl ? <img src={imgUrl} alt=""/> : <img src="src/assets/logo/workcationLogo/Logo.png"></img>}
             {children}
         </div>
     );
