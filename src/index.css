@@ -142,26 +142,34 @@ main{
   color: #60a5fa;
 }
 
-section.banners .banner{
-  margin: 12px;
+.banner{
+  width: 600px;
+  margin-top: 15px;
+}
+
+.banner:hover{
+  border: 1px solid;
+}
+
+.banner{
   border-radius: 8px;
   padding: 16px ;
   cursor: pointer;
   max-width: 800px;
 }
 
-section.banners .banner-line{
+.banner-line{
   display: flex;
   align-items: center;
   gap: 12px;
   font-weight: 500;
 }
 
-section.banners p{
+.banner p{
   margin: 8px 0 0 30px;
 }
 
-section.banners .icon{
+.banner-line .icon{
   font-size: 1.25rem;
 }
 
