@@ -66,9 +66,10 @@ function App() {
       </section>
 
       <section className="testimonials">
+
         <div className="testimonial-container">
           <img src="https://ben-custom-components.netlify.app/images/testimonial.jpeg" alt="" />
-          <div className="testimonial-content">
+          <div className="testimonial-body">
             <div className="icon">
               <FaQuoteLeft />
             </div>
@@ -80,9 +81,6 @@ function App() {
           </div>
         </div>
 
-        {/* <div className="testimonial-container">
-
-        </div> */}
       </section>
 
     </main >
