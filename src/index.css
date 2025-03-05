@@ -1,17 +1,14 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #dadada;
-  /* background-color: #2f2f2f; */
   /* height: 100vh; */
-  margin: 0;
-  /* padding: 0; */
   display: flex;
-  place-items: center;
-  /* flex-direction: row; */
-  /* justify-content: center; */
+  justify-content: center;
   margin-top: 40px;
   font-family: "Inter", serif;
 }
@@ -20,11 +17,6 @@ h1, h2, h3{
   /* color: #E5E7EB; */
   text-align: center;
 }
-
-/* section{
-  display: flex;
-  flex-direction: column;
-} */
 
 /* button {
   background-color: #E5E7EB;
@@ -41,12 +33,6 @@ h1, h2, h3{
   font-family: 'Inter', sans-serif;
 } */
 
-.square-badges{
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
 .badge{
   cursor: pointer;
   font-weight: 500;
@@ -56,18 +42,22 @@ h1, h2, h3{
   font-family: 'Inter', sans-serif;
 }
 
+.square-badges{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  gap: 5px;
+}
+
 .pill-badges{
   display: flex;
   justify-content: center;
+  margin: 15px;
   gap: 5px;
 }
 
 .pill-badges span{
   border-radius: 30px;
-}
-
-button.pill{
-  border-radius: 50px;
 }
 
 .gray{

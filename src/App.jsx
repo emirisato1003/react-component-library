@@ -47,9 +47,8 @@ function App() {
         }
       </section>
 
-      <h2>Cards</h2>
       <section className="cards">
-
+        <h2>Cards</h2>
         <Card>
           <Card.Title>Easy Deployment</Card.Title>
           <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
