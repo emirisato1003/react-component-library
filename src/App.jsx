@@ -49,20 +49,20 @@ function App() {
 
       <section className="cards">
         <h2>Cards</h2>
-        <Card>
-          <Card.Title>Easy Deployment</Card.Title>
-          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
-        </Card>
-
-        <Card icon={<FaReact />} iconBgColor='blue'>
-          <Card.Title>Easy Deployment</Card.Title>
-          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
-        </Card>
-
-        <Card icon={<DiCodeBadge />} iconBgColor='purple'>
-          <Card.Title>Easy Deployment</Card.Title>
-          <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
-        </Card>
+        <div className="card">
+          <Card>
+            <Card.Title>Easy Deployment</Card.Title>
+            <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+          </Card>
+          <Card icon={<FaReact />} iconBgColor='blue'>
+            <Card.Title>Easy Deployment</Card.Title>
+            <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+          </Card>
+          <Card icon={<DiCodeBadge />} iconBgColor='purple'>
+            <Card.Title>Easy Deployment</Card.Title>
+            <Card.Text>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card.Text>
+          </Card>
+        </div>
       </section>
 
       <section className="testimonials">
