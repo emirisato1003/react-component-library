@@ -132,7 +132,11 @@ main{
 section.banners{
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   width: 600px;
+=======
+  /* min-width: 600px; */
+>>>>>>> bddc509099178f483370badc2f48aeca8322e879
 }
 
 .banner:hover{
@@ -277,6 +281,7 @@ p.body-text{
   
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 992px) {
   p.body-text{
@@ -297,6 +302,9 @@ p.body-text{
   }
   
 
+=======
+@media (max-width: 768px){
+>>>>>>> bddc509099178f483370badc2f48aeca8322e879
   .testimonial-container{
     margin-top: 10em;
     flex-wrap: wrap;
