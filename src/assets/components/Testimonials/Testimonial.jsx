@@ -1,22 +1,23 @@
+import classNames from "classnames";
+import { createContext } from "react";
+
+const TestimonialContext = createContext()
+
 export default function Testimonial({ children, imgUrl }) {
+    const testimonialClassName = classNames(imgUrl ? 'testimonial-container' : 'testimonial-withNoImg-container');
     return (
-        <div className="testimonial-container">
-            {imgUrl ? <img src={imgUrl} alt=""/> : <img src="src/assets/logo/workcationLogo/Logo.png"></img>}
-            {children}
-        </div>
+        <TestimonialContext.Provider value={{imgUrl}}>
+            <div className={testimonialClassName}>
+                {imgUrl ? <img src={imgUrl} alt="testimonial person portrait" /> :
+                    <>
+                        <img src="src/assets/logo//Logo.png" />
+                        <img className='dot_pattern' src="src/assets/logo/dot_pattern.png" alt="" />
+                    </>
+                }
+                {children}
+            </div>
+        </TestimonialContext.Provider>
     );
 }
 
-{/* <div className="testimonial-container">
-            <img src="https://ben-custom-components.netlify.app/images/testimonial.jpeg" alt="" />
-            <div className="testimonial-body">
-                <div className="icon">
-                    <FaQuoteLeft />
-                </div>
-                <p className="body-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
-                <div className="card-footer">
-                    <p className='footer-name'>May Andersons</p>
-                    <p className='footer-role'>Workcation, CTO</p>
-                </div>
-            </div>
-        </div> */}
+export {TestimonialContext}
