@@ -73,21 +73,19 @@ function App() {
           </Testimonial.Body>
         </Testimonial>
 
-        <Testimonial imgUrl="">
+        <div className="testimonial-withNoImg-container">
+          <img src="src\assets\logo\Logo.png" alt="" />
+          <img className='dot_pattern' src="src/assets/logo/dot_pattern.png" alt="" />
           <div className="testimonial-body">
             <div className="testimonial-content">
-              <div className="icon">
-                <FaQuoteLeft />
-              </div>
               <p className="body-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</p>
-            </div>
-            <div className="testimonial-footer">
-              <p className='footer-name'>May Andersons</p>
-              <p className='footer-role'>Workcation, CTO</p>
+              <div className="testimonial-footer">
+                <p className='footer-name'>May Andersons</p>
+                <p className='footer-role'>Workcation, CTO</p>
+              </div>
             </div>
           </div>
-        </Testimonial>
-
+        </div>
 
       </section>
 

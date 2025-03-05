@@ -219,6 +219,62 @@ section.banners{
   margin: 7em 0;
 }
 
+/* testimonial no pic */
+
+.testimonial-withNoImg-container{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  height: 400px;
+  flex-grow: 1;
+  margin: 7em 0;
+  position: relative;
+}
+
+img.dot_pattern{
+  position: absolute;
+  top: 28%;
+  right: 80%;
+}
+
+.testimonial-withNoImg-container .testimonial-body{
+  display: flex;
+  margin: 0 15px;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.testimonial-withNoImg-container .testimonial-body p{
+  color: #000;
+}
+
+.testimonial-withNoImg-container .testimonial-body .body-text::before{
+  content: '"';
+}
+
+.testimonial-withNoImg-container .testimonial-body .body-text::after{
+  content: '"';
+}
+
+.testimonial-withNoImg-container .testimonial-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-withNoImg-container .testimonial-footer .footer-name::after{
+  content: '/';
+  margin: 0 5px;
+  color: #2e59f3;
+}
+
+/* ------------------ */
+
 .testimonial-container img{
   width: 355px;
   object-fit: cover;
@@ -228,13 +284,13 @@ section.banners{
   border-radius: 12px;
 }
 
-.testimonial-body{
+.testimonial-container .testimonial-body{
   color: white;
   padding: 7em;
 }
 
 
-.testimonial-body .icon{
+.testimonial-container .testimonial-body .icon{
   font-size: 35px;
   color:rgba(255, 255, 255, 0.25);
 }
@@ -246,6 +302,9 @@ p.body-text{
   padding: 25px 0;
 }
 
+.testimonial-container .testimonial-footer p{
+  line-height: 30px;
+} 
 .footer-name{
   font-weight: bold;
 }
@@ -261,15 +320,11 @@ p.body-text{
     transform: translate(2em,-0.01em);
   }
   
-  .testimonial-body{
+  .testimonial-container.testimonial-body{
     margin: 35px;
     padding: 0 20px 0;
   }
 
-  p.body-text{
-    font-size: 1.2rem;
-  }
-  
 }
 
 @media (max-width: 768px){
@@ -291,16 +346,21 @@ p.body-text{
     transform: translateY(-7em);
   }
   
-  .testimonial-body{
+  .testimonial-container > .testimonial-body{
     width: 380px;
     color: white;
     margin-top: -10%;
     padding: 0 20px 25px;
   }
-
-  p.body-text{
-    font-size: 1.2rem;
-    line-height: 25px;
+  
+  .testimonial-container p.body-text{
+    font-size: 1.3rem;
+    line-height: 30px;
     padding: 25px 0;
   }
+  
+  .testimonial-container .testimonial-footer{
+    margin-bottom: 30px;
+  }
+
 }

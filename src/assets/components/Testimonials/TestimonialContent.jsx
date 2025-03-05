@@ -8,8 +8,10 @@ export default function TestimonialContent({ children, name, role }) {
                 <FaQuoteLeft />
             </div>
             <p className="body-text">{children}</p>
-            <p className='footer-name'>{name}</p>
-            <p className='footer-role'>{role}</p>
+            <div className="testimonial-footer">
+                <p className='footer-name'>May Andersons</p>
+                <p className='footer-role'>Workcation, CTO</p>
+            </div>
         </div>
     );
 }
