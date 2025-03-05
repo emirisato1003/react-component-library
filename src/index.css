@@ -132,11 +132,7 @@ main{
 section.banners{
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   width: 600px;
-=======
-  /* min-width: 600px; */
->>>>>>> bddc509099178f483370badc2f48aeca8322e879
 }
 
 .banner:hover{
@@ -213,11 +209,6 @@ section.banners{
   transform: translateY(-50%);
 }
 
-section.testimonials{
-  /* display: flex; */
-  /* margin: 90px; */
-}
-
 .testimonial-container{
   display: flex;
   justify-content:space-around;
@@ -281,30 +272,11 @@ p.body-text{
   
 }
 
-<<<<<<< HEAD
-
-@media (max-width: 992px) {
-  p.body-text{
-    /* font-size: 1.1rem; */
-  }
-  
-  .card-footer p{
-    font-size: 1rem;
-    margin: 0;
-  }
-}
-
 @media (max-width: 768px){
   section.banners{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
+    width: 500px;
   }
-  
 
-=======
-@media (max-width: 768px){
->>>>>>> bddc509099178f483370badc2f48aeca8322e879
   .testimonial-container{
     margin-top: 10em;
     flex-wrap: wrap;
