@@ -1,6 +1,7 @@
-export default function Testimonial({ children }) {
+export default function Testimonial({ children, imgUrl }) {
     return (
         <div className="testimonial-container">
+            {imgUrl && <img src={imgUrl} alt="" />}
             {children}
         </div>
     );
