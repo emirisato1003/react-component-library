@@ -242,12 +242,14 @@ img.dot_pattern{
 
 .testimonial-withNoImg-container .testimonial-body{
   display: flex;
-  margin: 0 15px;
-  justify-content: center;
+  margin: 0 25px;
   text-align: center;
-  padding: 0;
   flex-wrap: wrap;
   z-index: 0;
+}
+
+.testimonial-withNoImg-container .testimonial-body .body-text{
+  padding: 50px 0 30px 0;
 }
 
 .testimonial-withNoImg-container .testimonial-body p{
@@ -289,7 +291,7 @@ img.dot_pattern{
 
 .testimonial-container .testimonial-body{
   color: white;
-  padding: 7em;
+  padding: 4em 5em 2em;
 }
 
 
@@ -299,10 +301,10 @@ img.dot_pattern{
 }
 
 p.body-text{
-  margin: 15px 0;
+  /* margin: 15px 0; */
   font-size: 1.5rem;
   color: #ffffff;
-  padding: 25px 0;
+  /* padding: 25px 0; */
 }
 
 .testimonial-container .testimonial-footer p{
