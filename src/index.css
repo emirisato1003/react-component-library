@@ -209,6 +209,12 @@ section.banners{
   transform: translateY(-50%);
 }
 
+section.testimonials h3{
+  font-family: "Permanent Marker", serif;
+  color: #5E5D5D;
+  text-align: center;
+}
+
 .testimonial-container{
   display: flex;
   justify-content:space-around;
@@ -216,7 +222,7 @@ section.banners{
   background-color: #2545B8;
   height: 400px;
   flex-grow: 1;
-  margin: 7em 0;
+  margin: 2em 0 5em;
 }
 
 /* testimonial no pic */
@@ -230,7 +236,7 @@ section.banners{
   color: #000;
   height: 400px;
   flex-grow: 1;
-  margin: 7em 0;
+  margin: 1em 0;
   position: relative;
 }
 
@@ -317,7 +323,6 @@ p.body-text{
 
 @media (max-width: 1200px) {
   .testimonial-container{
-    margin: 0 0 40px 0;
     height: 320px;
   }
   .testimonial-container img{

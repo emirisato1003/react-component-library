@@ -67,13 +67,15 @@ function App() {
       </section>
 
       <section className="testimonials">
+        <h2>Testimonials</h2>
+        <h3>With Pic</h3>
         <Testimonial imgUrl="https://ben-custom-components.netlify.app/images/testimonial.jpeg">
           <Testimonial.Body>
             <Testimonial.Content name="May Andersons" role="Workcation, CTO">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</Testimonial.Content>
           </Testimonial.Body>
         </Testimonial>
 
-
+        <h3>No Pic</h3>
         <Testimonial imgUrl="">
           <Testimonial.Body>
             <Testimonial.Content name="May Andersons" role="Workcation, CTO">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</Testimonial.Content>
