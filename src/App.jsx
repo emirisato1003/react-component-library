@@ -5,7 +5,7 @@ import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-import MyComponent from './assets/components/ToolTips/Portal'
+import MyComponent from './assets/components/ToolTips/Portal';
 
 //temporary import
 import { DiCodeBadge } from "react-icons/di";
@@ -15,7 +15,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
   return (
-    // <Star onChange={() => { }} />
+    // <Star onChange={() => {}} />
     <main>
       <h1>React Component Library</h1>
 
@@ -82,11 +82,9 @@ function App() {
             <Testimonial.Content name="May Andersons" role="Workcation, CTO">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit incidunt numquam atque sed aliquid quisquam harum excepturi nam nostrum sapiente?</Testimonial.Content>
           </Testimonial.Body>
         </Testimonial>
-
-        <MyComponent></MyComponent>
-
       </section>
 
+      <MyComponent></MyComponent>
     </main >
   );
 }
