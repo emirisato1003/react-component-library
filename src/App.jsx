@@ -7,10 +7,11 @@ import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
 import MyComponent from './assets/components/ToolTips/Portal';
 
-//temporary import
+//icon import
 import { DiCodeBadge } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
-import { FaQuoteLeft } from "react-icons/fa";
+import { IoIosInformationCircle } from "react-icons/io";
+import { BsArchive } from "react-icons/bs";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -84,7 +85,14 @@ function App() {
         </Testimonial>
       </section>
 
-      <MyComponent></MyComponent>
+      <button><IoIosInformationCircle /></button>
+      <div className="tooltip-container">
+        <BsArchive />
+        <div className="tooltip-content">
+          <h5>Archive notes</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+        </div>
+      </div>
     </main >
   );
 }
