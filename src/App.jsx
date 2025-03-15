@@ -1,17 +1,18 @@
-import React from 'react';
-import Star from './assets/Star';
+// import React from 'react';
+// import Star from './assets/Star';
 import Badges from './assets/Badges';
 import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-import MyComponent from './assets/components/ToolTips/Portal';
+// import MyComponent from './assets/components/ToolTips/Portal';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
-import { IoIosInformationCircle } from "react-icons/io";
+// import { IoIosInformationCircle } from "react-icons/io";
 import { BsArchive } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -85,14 +86,18 @@ function App() {
         </Testimonial>
       </section>
 
-      <button><IoIosInformationCircle /></button>
-      <div className="tooltip-container">
-        <BsArchive />
-        <div className="tooltip-content">
-          <h5>Archive notes</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-        </div>
-      </div>
+      <section className="tooltip">
+          <div className="tooltip-container">
+            <BsArchive className='archive-icon icon'/>
+            <div className="tooltip-text">
+              <p className='tooltip-title'>Archive notes</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+            </div>
+            <button className='close-btn'>
+              <IoMdClose className='icon'/>
+            </button>
+          </div>
+      </section>
     </main >
   );
 }
