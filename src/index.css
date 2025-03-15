@@ -395,6 +395,22 @@ p.body-text{
   visibility: visible;
 }
 
+.pop-up{
+  width: 385px;
+  display: flex;
+  gap: 12px;
+  background-color: #ecfdf5;
+  color: #047857;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-icon{
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1200px) {
   .testimonial-container{
     height: 320px;

@@ -102,7 +102,7 @@ function App() {
 
       <section className="toast">
         <div className="pop-up">
-        <CiCircleCheck />
+        <CiCircleCheck className='popup-icon'/>
         <div className="pop-up-text">
           <p>Success</p>
           <p>Your work has been saved.</p>
