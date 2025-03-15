@@ -1,3 +1,23 @@
+:root{
+  --primary-dark:#262626;
+  --primary-dark-text: #c7c7c7;
+  --primary-light:#fff;
+  --primary-light-text:#6B7280;
+  --bold-blue: #1E40AF;
+  --bold-blue-text: #7EA6F2;
+  --light-blue: #E0E7FF;
+  --light-blue-text:#1C51B9;
+  --bold-pick:#A9229B;
+  --bold-pick-text: #F462E6;
+  --light-pick: #FFF3FC;
+  --light-pink-text: #C7369E;
+  --bold-green:#47AA5D;
+  --bold-green-text: #C1FFCF;
+  --light-green: #E7FFF3;
+  --light-green-text: #41A557;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -332,8 +352,8 @@ p.body-text{
   display: flex;
   justify-content: space-around;
   gap: 15px;
-  background-color: #262626;
-  color: #c7c7c7;
+  background-color: var(--primary-dark);
+  color: var(--primary-dark-text);
   width: 600px;
   border-radius: 8px;
   padding: 18px;
@@ -357,7 +377,7 @@ p.body-text{
 .tooltip-container button{
   background:none;
   border: none;
-  color: #c7c7c7;
+  color: var(--primary-dark-text);
   align-self: flex-start;
   cursor: pointer;
 }
@@ -368,7 +388,7 @@ p.body-text{
   transform: translateY(50%);
   border-width: 15px;
   border-style: solid;
-  border-color: #262626 transparent transparent transparent;
+  border-color: var(--primary-dark) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-container{
