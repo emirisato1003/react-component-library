@@ -1,9 +1,9 @@
 import { createPortal } from 'react-dom';
 
-export default function MyComponent() {
+export default function Portal({title, text, icon}) {
     return (
         <div style={{ border: '2px solid black' }}>
-            <p>This child is placed in the parent div.</p>
+            <p>children</p>
             {createPortal(
                 <p>This child is placed in the document body.</p>,
                 document.body
