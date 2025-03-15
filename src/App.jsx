@@ -13,6 +13,7 @@ import { FaReact } from "react-icons/fa";
 // import { IoIosInformationCircle } from "react-icons/io";
 import { BsArchive } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
+import { CiCircleCheck } from "react-icons/ci";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -97,6 +98,16 @@ function App() {
               <IoMdClose className='icon'/>
             </button>
           </div>
+      </section>
+
+      <section className="toast">
+        <div className="pop-up">
+        <CiCircleCheck />
+        <div className="pop-up-text">
+          <p>Success</p>
+          <p>Your work has been saved.</p>
+        </div>
+        </div>
       </section>
     </main >
   );
