@@ -1,6 +1,6 @@
 import { createPortal } from 'react-dom';
 
-export default function Portal({title, text, icon}) {
+export default function Portal() {
     return (
         <div style={{ border: '2px solid black' }}>
             <p>children</p>
