@@ -5,7 +5,7 @@ import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-import Portal from './assets/components/ToolTips/Portal';
+// import Portal from './assets/components/ToolTips/Portal';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
