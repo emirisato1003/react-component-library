@@ -4,13 +4,13 @@ import { BsArchive } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 
 
-export default function Portal({ onOpen }) {
+export default function Tooltip({ onOpen }) {
     const [on, setOn] = useToggle({
         onToggle: onOpen
     });
     return (
         <div>
-            <p onClick={setOn}>Click me</p>
+            <p onMouseEnter={setOn}>Click me</p>
             {on && createPortal(
                 <div className="tooltip-container">
                     <BsArchive className='archive-icon icon' />

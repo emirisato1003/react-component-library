@@ -5,7 +5,7 @@ import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-import Portal from './assets/components/ToolTips/Portal';
+import Portal from './assets/components/ToolTips/Tooltip';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
@@ -14,6 +14,7 @@ import { FaReact } from "react-icons/fa";
 // import { BsArchive } from "react-icons/bs";
 // import { IoMdClose } from "react-icons/io";
 import { CiCircleCheck } from "react-icons/ci";
+import Tooltip from './assets/components/ToolTips/Tooltip';
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -88,7 +89,7 @@ function App() {
       </section>
 
       <section className="tooltips">
-        <Portal onOpen={() => console.log("open/close tooltip")} />
+        <Tooltip onOpen={() => console.log("open/close tooltip")} />
       </section>
 
       <section className="toast">
