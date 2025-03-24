@@ -2,25 +2,24 @@ import { createPortal } from 'react-dom';
 import useToggle from '../../hooks/useToggle';
 import { BsArchive } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
+import classNames from 'classnames';
 
 
-export default function Tooltip({ onOpen }) {
-    const [on, setOn] = useToggle({
-        onToggle: onOpen
+export default function Tooltip({ children, text, theme }) {
+    const [visible, setVisible] = useToggle({
+        initialValue: false
     });
+    const showTooltip = () => setVisible(true);
+    const closeTooltip = () => setVisible(false);
+    const tooltipClassNames = classNames('tooltip-container', theme)
+
     return (
-        <div>
-            <p onMouseEnter={setOn}>Click me</p>
-            {on && createPortal(
-                <div className="tooltip-container">
-                    <BsArchive className='archive-icon icon' />
-                    <div className="tooltip-text">
-                        <p className='tooltip-title'>Archive notes</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-                    </div>
-                    <button className='close-btn'>
-                        <IoMdClose className='icon' />
-                    </button>
+        <div onClick={showTooltip} className='tooltip'>
+            <p>{text}</p>
+            {visible && createPortal(
+                <div onClick={showTooltip} className={tooltipClassNames}>
+                    {children}
+                    <button onClick={closeTooltip} className='close-btn icon'><IoMdClose/></button>
                 </div>
                 ,
                 document.body

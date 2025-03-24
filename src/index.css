@@ -344,23 +344,41 @@ p.body-text{
 /* ------tooltip--------- */
 
 section.tooltips{
+  display: flex;
+  gap: 100px;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  /* margin-bottom: 20px; */
 }
 
 .tooltip{
-  background-color: #fff;
+  margin-bottom: 20px;
+  background-color: var(--primary-dark);
+  color: var(--primary-dark-text);
   padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: .8s;
 }
 
 .tooltip-container{
+  position: inherit;
+  /* transform: translate(150px, -330px); */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 15px;
   background-color: var(--primary-dark);
   color: var(--primary-dark-text);
   width: 600px;
   border-radius: 8px;
   padding: 18px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.bold-blue{
+  background-color: var(--bold-blue);
+  color: var(--bold-blue-text);
 }
 
 .tooltip-container .icon{
@@ -384,7 +402,6 @@ section.tooltips{
 .tooltip-container button{
   background:none;
   border: none;
-  color: var(--primary-dark-text);
   align-self: flex-start;
   cursor: pointer;
 }
@@ -395,7 +412,7 @@ section.tooltips{
   transform: translateY(50%);
   border-width: 15px;
   border-style: solid;
-  border-color: var(--primary-dark) transparent transparent transparent;
+  border-color: var(--bold-blue) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-container{

@@ -5,16 +5,15 @@ import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-import Portal from './assets/components/ToolTips/Tooltip';
+import Tooltip from './assets/components/ToolTips/Tooltip';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 // import { IoIosInformationCircle } from "react-icons/io";
-// import { BsArchive } from "react-icons/bs";
-// import { IoMdClose } from "react-icons/io";
+import { BsArchive } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
 import { CiCircleCheck } from "react-icons/ci";
-import Tooltip from './assets/components/ToolTips/Tooltip';
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -89,7 +88,69 @@ function App() {
       </section>
 
       <section className="tooltips">
-        <Tooltip onOpen={() => console.log("open/close tooltip")} />
+        <Tooltip text="Click me" theme="bold-blue">
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
+
+        <Tooltip text="hover me" >
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+          </div>
+        </Tooltip>
       </section>
 
       <section className="toast">
