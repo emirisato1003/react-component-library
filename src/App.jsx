@@ -5,7 +5,7 @@ import Banner from './assets/components/Banner/index';
 import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
-// import Portal from './assets/comp onents/ToolTips/Portal';
+import Portal from './assets/components/ToolTips/Portal';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
@@ -88,27 +88,29 @@ function App() {
       </section>
 
       <section className="tooltip">
-          <div className="tooltip-container">
-            <BsArchive className='archive-icon icon'/>
-            <div className="tooltip-text">
-              <p className='tooltip-title'>Archive notes</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-            </div>
-            <button className='close-btn'>
-              <IoMdClose className='icon'/>
-            </button>
+        <div className="tooltip-container">
+          <BsArchive className='archive-icon icon' />
+          <div className="tooltip-text">
+            <p className='tooltip-title'>Archive notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
           </div>
+          <button className='close-btn'>
+            <IoMdClose className='icon' />
+          </button>
+        </div>
       </section>
 
       <section className="toast">
         <div className="pop-up">
-        <CiCircleCheck className='popup-icon'/>
-        <div className="pop-up-text">
-          <p>Success</p>
-          <p>Your work has been saved.</p>
-        </div>
+          <CiCircleCheck className='popup-icon' />
+          <div className="pop-up-text">
+            <p>Success</p>
+            <p>Your work has been saved.</p>
+          </div>
         </div>
       </section>
+
+      <Portal />
     </main >
   );
 }

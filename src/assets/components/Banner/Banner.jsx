@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { createContext } from "react";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import useToggle from "../../hooks/useToggle";
 const BannerContext = createContext();
 
