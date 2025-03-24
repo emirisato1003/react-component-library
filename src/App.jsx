@@ -11,8 +11,8 @@ import Portal from './assets/components/ToolTips/Portal';
 import { DiCodeBadge } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 // import { IoIosInformationCircle } from "react-icons/io";
-import { BsArchive } from "react-icons/bs";
-import { IoMdClose } from "react-icons/io";
+// import { BsArchive } from "react-icons/bs";
+// import { IoMdClose } from "react-icons/io";
 import { CiCircleCheck } from "react-icons/ci";
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <h2>Banners</h2>
         {
           bannerData.map(data => data.text &&
-            <Banner key={data.status} status={data.status}>
+            <Banner onOpen={() => console.log("open/close banner")} key={data.status} status={data.status}>
               <Banner.Title>{data.icon}{data.title}</Banner.Title>
               <Banner.Dropdown>{data.text}</Banner.Dropdown>
             </Banner>
@@ -87,17 +87,8 @@ function App() {
         </Testimonial>
       </section>
 
-      <section className="tooltip">
-        <div className="tooltip-container">
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-          <button className='close-btn'>
-            <IoMdClose className='icon' />
-          </button>
-        </div>
+      <section className="tooltips">
+        <Portal onOpen={() => console.log("open/close tooltip")} />
       </section>
 
       <section className="toast">
@@ -110,7 +101,6 @@ function App() {
         </div>
       </section>
 
-      <Portal />
     </main >
   );
 }
