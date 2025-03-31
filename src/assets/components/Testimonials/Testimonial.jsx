@@ -10,8 +10,8 @@ export default function Testimonial({ children, imgUrl }) {
             <div className={testimonialClassName}>
                 {imgUrl ? <img src={imgUrl} alt="testimonial person portrait" /> :
                     <>
-                        <img src="src\assets\logo\Logo.png" />
-                        <img className='dot_pattern' src="src\assets\logo\dot_pattern.png" alt="" />
+                        <img src="src\assets\Logo.png" />
+                        <img className='dot_pattern' src="src\assets\dot_pattern.png" alt="" />
                     </>
                 }
                 {children}
