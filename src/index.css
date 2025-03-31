@@ -466,6 +466,12 @@ section.tooltips .title{
   z-index: 1000;
 }
 
+#toast-root button{
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
 .toast-container{
   width: 385px;
   display: flex;

@@ -8,23 +8,17 @@ const ToastContext = createContext();
 
 export default function ToastContainer({ children }) {
     const [toasts, setToasts] = useState([]);
-    const [visible, setVisible] = useToggle({
-        initialValue: false
-    });
+
     const addToast = (type, message, icon) => {
         const newToast = { id: Date.now(), type, message, icon };
         setToasts(prev => [...prev, newToast]);
-        // auto-remove toast after timeout
         setTimeout(() => removeToast(newToast.id), 3000);
-        const removeToast = (id) => {
-            setToasts(prev => prev.filter(toast => toast.id !== id));
-        };
     };
 
+    const removeToast = (id) => {
+        setToasts(prev => prev.filter(toast => toast.id !== id));
+    };
 
-    // console.log(toasts.filter(toast => toast.id !== id));
-
-    console.log(visible);
     return (
         <ToastContext.Provider value={{ addToast }}>
             {children}
