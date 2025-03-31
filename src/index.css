@@ -464,11 +464,13 @@ section.tooltips .title{
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  background-color: #fff;
+  padding: 10px;
 }
 
 #toast-root button{
   padding: 10px;
-  margin-left: 5px;
+  margin: 10px 5px;
   border-radius: 5px;
 }
 
@@ -481,7 +483,7 @@ section.tooltips .title{
   padding: 16px;
   border-radius: 8px;
   line-height: 24px;
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 

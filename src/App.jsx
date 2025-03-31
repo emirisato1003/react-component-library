@@ -102,6 +102,7 @@ function App() {
       </section>
 
       <Toast>
+        <h2>Toast Popups</h2>
         <ToastContainer>
           <ToastText title="Success" content="Your work has been saved." />
         </ToastContainer>
