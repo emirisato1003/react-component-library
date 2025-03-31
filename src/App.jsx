@@ -6,6 +6,7 @@ import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
 import Tooltip from './assets/components/ToolTips/Tooltip';
+import Toast from './assets/components/Toasts/Popup';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
@@ -13,7 +14,6 @@ import { FaReact } from "react-icons/fa";
 // import { IoIosInformationCircle } from "react-icons/io";
 import { BsArchive } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import { CiCircleCheck } from "react-icons/ci";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -99,15 +99,7 @@ function App() {
       })}
       </section>
 
-      <section className="toast">
-        <div className="pop-up">
-          <CiCircleCheck className='popup-icon' />
-          <div className="pop-up-text">
-            <p>Success</p>
-            <p>Your work has been saved.</p>
-          </div>
-        </div>
-      </section>
+      <Toast />
 
     </main >
   );
