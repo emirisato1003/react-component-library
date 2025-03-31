@@ -13,14 +13,17 @@ export default function Toast() {
     // const popupClass = classNames('popup', theme);
 
     return (
+        createPortal(
         <section className="toast">
-            <div className="pop-up">
-                <CiCircleCheck className='popup-icon' />
-                <div className="pop-up-text">
+            <div className="toast-container">
+                <CiCircleCheck className='toast-icon' />
+                <div className="toast-text">
                     <p>Success</p>
                     <p>Your work has been saved.</p>
                 </div>
             </div>
-        </section>
+        </section>,
+        document.body
+        )
     );
 }
