@@ -455,10 +455,6 @@ section.tooltips .title{
 .tooltip.bold-green::after { border-color: var(--bold-green) transparent transparent transparent; }
 .tooltip.light-green::after { border-color: var(--light-green) transparent transparent transparent; }
 
-/* .tooltip:hover .tooltip{
-  visibility: visible;
-} */
-
 /* ---------------------- */
 
 .pop-up{

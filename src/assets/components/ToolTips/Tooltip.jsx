@@ -10,7 +10,6 @@ export default function Tooltip({ children, title, theme }) {
         initialValue: true
     });
 
-    // Extract color and style info from the theme
     const tooltipClass = clsx('tooltip', theme,);
     const tooltipTextClass = clsx('tooltip-text', theme);
     const closeButtonClass = clsx('close-btn', theme);

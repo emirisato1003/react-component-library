@@ -18,9 +18,7 @@ import { CiCircleCheck } from "react-icons/ci";
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
   const tooltipColorTheme = ['bold-dark','light','bold-blue','light-blue', 'bold-pink', 'light-pink', 'bold-green', 'light-green']
-  // const tooltipColorTheme = ['bold-blue']
   return (
-    // <Star onChange={() => {}} />
     <main>
       <h1>React Component Library</h1>
 
