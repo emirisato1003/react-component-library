@@ -14,17 +14,13 @@ export default function ToastContainer({ children }) {
     const addToast = (type, message, icon) => {
         const newToast = { id: Date.now(), type, message, icon };
         setToasts(prev => [...prev, newToast]);
+        // auto-remove toast after timeout
+        setTimeout(() => removeToast(newToast.id), 3000);
+        const removeToast = (id) => {
+            setToasts(prev => prev.filter(toast => toast.id !== id));
+        };
     };
 
-    // auto-remove toast after timeout
-    // setTimeout(() => {
-    //     const id = toasts.map(item => item.id);
-    //     removeToast(id);
-    // }, 3000);
-
-    const removeToast = (id) => {
-        setToasts(prev => prev.filter(toast => toast.id !== id));
-    };
 
     // console.log(toasts.filter(toast => toast.id !== id));
 
@@ -41,7 +37,7 @@ export default function ToastContainer({ children }) {
                                 <p>{toast.type}</p>
                                 <p>{toast.message}</p>
                             </div>
-                            <button className={`toast-close-btn ${toast.type}`}>
+                            <button className={`toast-close-btn ${toast.type}`} onClick={() => removeToast(toast.id)}>
                                 <IoMdClose />
                             </button>
                         </div>
