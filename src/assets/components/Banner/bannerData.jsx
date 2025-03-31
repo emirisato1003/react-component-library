@@ -23,7 +23,7 @@ export const bannerData = [{
 },
 {
     'title': 'Update available',
-    'status': 'neutral',
+    'status': 'information',
     'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti?',
     'icon': <HiMiniInformationCircle className="icon" />
 },

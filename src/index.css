@@ -140,12 +140,12 @@ main{
   color: #f87171;
 }
 
-.neutral{
+.information{
   background-color: #eff6ff;
   color: #1c51b9;
 }
 
-.neutral .icon{
+.information .icon{
   color: #60a5fa;
 }
 
@@ -457,12 +457,20 @@ section.tooltips .title{
 
 /* ---------------------- */
 
+/* ---------- toast style -----------*/
+
+#toast-root{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 .toast-container{
   width: 385px;
   display: flex;
+  /* justify-content: space-between; */
   gap: 12px;
-  background-color: #ecfdf5;
-  color: #047857;
   padding: 16px;
   border-radius: 8px;
   line-height: 24px;
@@ -472,6 +480,11 @@ section.tooltips .title{
 
 .toast-icon{
   font-size: 1.5rem;
+}
+
+.toast-container button{
+  background-color: none;
+  justify-self: end;
 }
 
 @media (max-width: 1200px) {

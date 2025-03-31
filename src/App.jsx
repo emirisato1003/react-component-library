@@ -6,7 +6,7 @@ import { bannerData } from './assets/components/Banner/bannerData';
 import Card from './assets/components/Cards/index';
 import Testimonial from './assets/components/Testimonials/index';
 import Tooltip from './assets/components/ToolTips/Tooltip';
-import Toast from './assets/components/Toasts/Popup';
+import Toast from './assets/components/Toasts/Toast';
 
 //icon import
 import { DiCodeBadge } from "react-icons/di";
@@ -14,10 +14,12 @@ import { FaReact } from "react-icons/fa";
 // import { IoIosInformationCircle } from "react-icons/io";
 import { BsArchive } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
+import ToastContainer from './assets/components/Toasts/ToastContainer';
+import ToastText from './assets/components/Toasts/ToastText';
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
-  const tooltipColorTheme = ['bold-dark','light','bold-blue','light-blue', 'bold-pink', 'light-pink', 'bold-green', 'light-green']
+  const tooltipColorTheme = ['bold-dark', 'light', 'bold-blue', 'light-blue', 'bold-pink', 'light-pink', 'bold-green', 'light-green'];
   return (
     <main>
       <h1>React Component Library</h1>
@@ -88,18 +90,22 @@ function App() {
       </section>
 
       <section className="tooltips">
-      <div className="title">
-        <h2>Tooltips</h2>
-        <h3>BOLD AND LIGHT</h3>
-      </div>
-      {tooltipColorTheme.map(theme => {
-        return (<Tooltip key={theme} title="Archive notes" theme={theme}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, magni.
-        </Tooltip>)
-      })}
+        <div className="title">
+          <h2>Tooltips</h2>
+          <h3>BOLD AND LIGHT</h3>
+        </div>
+        {tooltipColorTheme.map(theme => {
+          return (<Tooltip key={theme} title="Archive notes" theme={theme}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, magni.
+          </Tooltip>);
+        })}
       </section>
 
-      <Toast />
+      <Toast>
+        <ToastContainer>
+          <ToastText title="Success" content="Your work has been saved." />
+        </ToastContainer>
+      </Toast>
 
     </main >
   );
