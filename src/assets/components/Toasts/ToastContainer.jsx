@@ -41,9 +41,9 @@ export default function ToastContainer({ children }) {
                                 <p>{toast.type}</p>
                                 <p>{toast.message}</p>
                             </div>
-                            <div className="toast-close-btn">
+                            <button className={`toast-close-btn ${toast.type}`}>
                                 <IoMdClose />
-                            </div>
+                            </button>
                         </div>
                     ))}
                 </div>
