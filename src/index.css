@@ -1,15 +1,15 @@
 :root{
-  --primary-dark:#262626;
-  --primary-dark-text: #c7c7c7;
-  --primary-light:#fff;
-  --primary-light-text:#6B7280;
+  --bold-dark:#262626;
+  --bold-dark-text: #c7c7c7;
+  --light:#fff;
+  --light-text:#6B7280;
   --bold-blue: #1E40AF;
   --bold-blue-text: #7EA6F2;
   --light-blue: #E0E7FF;
   --light-blue-text:#1C51B9;
-  --bold-pick:#A9229B;
-  --bold-pick-text: #F462E6;
-  --light-pick: #FFF3FC;
+  --bold-pink:#A9229B;
+  --bold-pink-text: #fff;
+  --light-pink: #FFF3FC;
   --light-pink-text: #C7369E;
   --bold-green:#47AA5D;
   --bold-green-text: #C1FFCF;
@@ -344,36 +344,39 @@ p.body-text{
 /* ------tooltip--------- */
 
 section.tooltips{
-  display: flex;
-  gap: 100px;
-  /* justify-content: space-around; */
-  flex-wrap: wrap;
-  /* margin-bottom: 20px; */
+  display: grid;
+  grid-template: 1fr 1fr /1fr 1fr;
+  column-gap: 40px;
+}
+
+section.tooltips .title{
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.title h3{
+  font-family: "Permanent Marker", serif;
+  color:#5E5D5D;
 }
 
 .tooltip{
-  margin-bottom: 20px;
-  background-color: var(--primary-dark);
-  color: var(--primary-dark-text);
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  transition: .8s;
-}
-
-.tooltip-container{
-  position: inherit;
-  /* transform: translate(150px, -330px); */
   display: flex;
-  /* justify-content: space-around; */
-  gap: 15px;
-  background-color: var(--primary-dark);
-  color: var(--primary-dark-text);
-  width: 600px;
+  width: 384px;
   border-radius: 8px;
   padding: 18px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 44px;
+}
+
+
+.bold-dark{
+  background-color: var(--bold-dark);
+  color: var(--bold-dark-text);
+}
+
+.light{
+  background-color: var(--light);
+  color: var(--light-text);
 }
 
 .bold-blue{
@@ -381,17 +384,41 @@ section.tooltips{
   color: var(--bold-blue-text);
 }
 
-.tooltip-container .icon{
+.light-blue{
+  background-color: var(--light-blue);
+  color: var(--light-blue-text);
+}
+
+.bold-pink{
+  background-color: var(--bold-pink);
+  color: var(--bold-pink-text);
+}
+
+.light-pink{
+  background-color: var(--light-pink);
+  color: var(--light-pink-text);
+}
+
+.bold-green{
+  background-color: var(--bold-green);
+  color: var(--bold-green-text);
+}
+
+.light-green{
+  background-color: var(--light-green);
+  color: var(--light-green-text);
+}
+
+.tooltip .icon{
   font-size: 1.7rem;
 }
 
 .tooltip-text{
-  font-size: 1.2rem;
+  padding-left: 15px;
 }
 
 .tooltip-text .tooltip-title{
-  color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 6px;
 }
 
@@ -399,25 +426,40 @@ section.tooltips{
   font-weight: 200;
 }
 
-.tooltip-container button{
+.close-btn{
   background:none;
   border: none;
   align-self: flex-start;
   cursor: pointer;
 }
 
-.tooltip-text::after{
-  content: "";
-  position: absolute;
-  transform: translateY(50%);
-  border-width: 15px;
-  border-style: solid;
-  border-color: var(--bold-blue) transparent transparent transparent;
+.close-btn .icon{
+  font-size: 1rem;
 }
 
-.tooltip:hover .tooltip-container{
-  visibility: visible;
+.tooltip::after{
+  content: "";
+  position: absolute;
+  transform: translate(20px, 80px);
+  border-width: 15px;
+  border-style: solid;
+  /* border-color: var(--bold-blue) transparent transparent transparent; */
 }
+
+.tooltip.bold-dark::after { border-color: var(--bold-dark) transparent transparent transparent; }
+.tooltip.light::after { border-color: var(--light) transparent transparent transparent; }
+.tooltip.bold-blue::after { border-color: var(--bold-blue) transparent transparent transparent; }
+.tooltip.light-blue::after { border-color: var(--light-blue) transparent transparent transparent; }
+.tooltip.bold-pink::after { border-color: var(--bold-pink) transparent transparent transparent; }
+.tooltip.light-pink::after { border-color: var(--light-pink) transparent transparent transparent; }
+.tooltip.bold-green::after { border-color: var(--bold-green) transparent transparent transparent; }
+.tooltip.light-green::after { border-color: var(--light-green) transparent transparent transparent; }
+
+/* .tooltip:hover .tooltip{
+  visibility: visible;
+} */
+
+/* ---------------------- */
 
 .pop-up{
   width: 385px;

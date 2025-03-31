@@ -17,6 +17,8 @@ import { CiCircleCheck } from "react-icons/ci";
 
 function App() {
   const badges = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
+  const tooltipColorTheme = ['bold-dark','light','bold-blue','light-blue', 'bold-pink', 'light-pink', 'bold-green', 'light-green']
+  // const tooltipColorTheme = ['bold-blue']
   return (
     // <Star onChange={() => {}} />
     <main>
@@ -88,69 +90,15 @@ function App() {
       </section>
 
       <section className="tooltips">
-        <Tooltip text="Click me" theme="bold-blue">
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
-
-        <Tooltip text="hover me" >
-          <BsArchive className='archive-icon icon' />
-          <div className="tooltip-text">
-            <p className='tooltip-title'>Archive notes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
-          </div>
-        </Tooltip>
+      <div className="title">
+        <h2>Tooltips</h2>
+        <h3>BOLD AND LIGHT</h3>
+      </div>
+      {tooltipColorTheme.map(theme => {
+        return (<Tooltip key={theme} title="Archive notes" theme={theme}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, magni.
+        </Tooltip>)
+      })}
       </section>
 
       <section className="toast">
