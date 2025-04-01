@@ -4,7 +4,7 @@ import clsx from "clsx";
 // import Button from "../Button/Button";
 
 
-export default function Badges({ children, color, type }) {
+export default function Badges({ children, color }) {
     const allClasses = classNames('badge', color);
     // console.log(className);
     return (
